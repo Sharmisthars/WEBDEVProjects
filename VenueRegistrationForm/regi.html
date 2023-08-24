@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Registration</title>
+</head>
+<body>
+    <center>
+    <h1>Registration For Booking</h1>
+    <form name="owner-reg">
+        <table cellpadding="10">
+            <tr>
+                <td>Enter Name</td>
+                <td><input type="text" name="fullname" required placeholder="Enter your full name" autofocus></td>
+            </tr>
+            <tr>
+                <td>Phone number</td>
+                <td><input type="tel" id="Phone" name="phone" required placeholder="Enter phone number" maxlength="10" size="20" required></td>
+            </tr>  
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="Male" checked>Male
+                    <input type="radio" name="gender" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Enter Email-ID</td>
+                <td><input type="email" name="email_id" placeholder="Enter your email id" required></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pwd" maxlength="5" required></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address" rows="2" cols="30" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Select venue location</td>
+                <td>
+                    <select name="location">
+                        <option value="">-Select location at KOLKATA-</option>
+                        <option value="Ballygunge">Ballygunge</option>
+                        <option value="Bhowanipore">Bhowanipore</option>
+                        <option value="Jadavpur">Jadavpur</option>
+                        <option value="Salt lake">Salt lake</option>
+                        <option value="Goriah">Goriah</option>
+                        <option value="Lake town">Lake town</option>
+                        <option value="Sovabazar">Sovabazar</option>
+                        <option value="Hatibagan">Sovabazar</option>
+                        <option value="Park street">Park street</option>
+                        <option value="Belgachia">Belgachia</option>
+                        <option value="Behala">Behala</option>
+                        <option value="Khidirpur">Khidirpur</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Date for event</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Starting Time</td>
+                <td><input type="time" name="btime"></td>
+            </tr>
+            <tr>
+                <td>Ending Time</td>
+                <td><input type="time" name="btime"></td>
+            </tr>
+            <tr>
+                <td>Food</td>
+                <td>
+                    <input type="radio" name="food" value="Veg">Veg
+                    <input type="radio" name="food" value="Non-veg">Non-veg
+                    <input type="radio" name="food" value="Both" checked>Both
+                </td>
+            </tr>
+            <tr>
+                <td>Liquor</td>
+                <td>
+                    <input type="checkbox" name="liquor" value="Cocktail">Cocktail
+                    <input type="checkbox" name="liquor" value="Mocktail">Mocktail
+                </td>
+            </tr>
+            <tr>
+                <td>Select Event type</td>
+                <td>
+                    <select name="Event">
+                        <option value="">-Select event type-</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Engagement">Engagement</option>
+                        <option value="Reception">Reception</option>
+                        <option value="Birthday party">Birthday party</option>
+                        <option value="Anniversary">Anniversary</option>
+                        <option value="Bachelor party">Bachelor party</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tentative guest number</td>
+                <td>
+                    <input type="checkbox" name="number" value="50-100" checked>50-100
+                    <input type="checkbox" name="number" value="100-200">100-200
+                    <input type="checkbox" name="number" value="200-300">200-300
+                    <input type="checkbox" name="number" value="300-400">300-400
+                    <input type="checkbox" name="number" value="400-500">400-500
+                    <input type="checkbox" name="number" value="500+">500+
+                </td>
+            </tr>
+            <tr>
+                <td>Select theme Color</td>
+                <td><input type="color" name="col"></td>
+            </tr>
+            <tr>
+                <td>Upload Aadhar</td>
+                <td><input type="file" name="Aadhar" accept="image/png, image/jpeg, image/jpg" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="reset" name="rs" value="Reset">
+                    <input type="submit" name="ok" value="Register">
+                </td>
+            </tr>
+        </table> 
+    </form>
+</center>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
