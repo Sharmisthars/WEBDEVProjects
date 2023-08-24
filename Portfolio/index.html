@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <p>Welcome to my portfolio</p>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="edu.html">Education</a></li>
+                <li><a href="intern.html">Internship</a></li>
+                <li><a href="hob.html">Hobbies</a></li>
+            </ul>   
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqZmrhJK9T0AePJsNOET80fix5Ia5ISEA0iw&usqp=CAU=";
+            " width="30" height="30" id="icon">
+        </nav>
+        <div class="info">
+            <h1>  I'm <span>Sharmistha</span> Roy.</h1>
+            <p>
+                An enthusiastic fresher</p>
+
+        </div>
+        <div class="img-box">
+            <img src="https://static.vecteezy.com/system/resources/previews/009/379/900/original/woman-face-expression-clipart-design-illustration-free-png.png" class="girl">
+        </div>
+        <div class="social-links">
+            <br>
+            <br>
+            <br>
+            <a href="https://www.linkedin.com/in/sharmistha-roy-326001263"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Sharmisthars"><i class="fab fa-github"></i></a>
+            <br>
+            <br>
+            <br>
+        <div class="email-links">
+            <a href="mailto:roysharmistha2003@gmail.com">roysharmistha2003@gmail.com</a>
+        </div>
+    </div>
+    <script>
+
+        var icon = document.getElementById("icon");
+        icon.onclick = function()
+        {
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "https://static.vecteezy.com/system/resources/previews/009/344/657/original/sun-transparent-background-free-png.png";
+            }else{
+                icon.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqZmrhJK9T0AePJsNOET80fix5Ia5ISEA0iw&usqp=CAU=";
+
+            }
+        }
+    </script>
+</body>
+</html>
